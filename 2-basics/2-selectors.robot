@@ -23,3 +23,8 @@ id Selector
    Hover  \#sponsors
    Highlight Elements  id=sponsors  duration=2s  style=solid  color=pink
    Sleep  3s
+
+Combining selectors
+   Click  id=browserkirjastosuomeksifinlandsuomi3
+   ${txt}=   Get Text    id=browserkirjastosuomeksifinlandsuomi3 >> ../../div[2] >> text=/.*Playwright.*/
+   Should Be Equal  ${txt}  Katsahdus uuteen Browser kirjastoon, joka käyttää Playwright selainautomaatiotyökalua.
