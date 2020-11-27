@@ -1,7 +1,7 @@
 *** Settings ***
 Library  Browser
 Suite Setup  Open Browser  https://robot-work.shop
-Suite Teardown  Close Browser
+Suite Teardown  Close Browser  ALL
 
 *** Test Cases ***
 CSS Selector
@@ -28,3 +28,8 @@ Combining selectors
    Click  id=browserkirjastosuomeksifinlandsuomi3
    ${txt}=   Get Text    id=browserkirjastosuomeksifinlandsuomi3 >> ../../div[2] >> text=/.*Playwright.*/
    Should Be Equal  ${txt}  Katsahdus uuteen Browser kirjastoon, joka käyttää Playwright selainautomaatiotyökalua.
+
+Frame piercing
+   New Page  https://www.dyn-web.com/tutorials/iframes/basics/demo.php
+   Highlight Elements  id=ifrm >>> h1  duration=1s  width=3px  color=red
+   Sleep  5s
