@@ -1,5 +1,5 @@
 *** Settings ***
-Library   Browser
+Library   Browser  retry_assertions_for=1s
 
 *** Test Cases ***
 Basic get without an assertion
