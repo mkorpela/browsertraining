@@ -16,7 +16,7 @@ Screenshot after network is idle
     Wait Until Network Is Idle
     Take Screenshot
 
-Intercepting a response
+Intercepting responses
     New Page  https://graphhopper.com/maps
     Type Text    id=0_Input  Turku
     Type Text    id=1_Input  Tampere
