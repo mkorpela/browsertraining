@@ -6,7 +6,7 @@ Browser, Context, Page
     New Browser  webkit  headless=False
     ${mobile}=  Get Device  iPhone SE
     New Context  &{mobile}
-    New Page  https://robot-work.shop/
+    New Page  https://robocon.io/
     Take Screenshot
     New Page  https://robotframework.org/
     Take Screenshot
@@ -16,12 +16,12 @@ Browser, Context, Page
 
 Page opens context and browser if none exists
     [Setup]  Close Browser  ALL
-    New Page  https://robot-work.shop/
-    Get Title  ==  World Wide Workshop Wednesday 2020
+    New Page  https://robocon.io/
+    Get Title  ==  RoboCon 2021
     Take Screenshot
 
 Open Browser is for development only
-    Open Browser  https://robot-work.shop/
-    Get Title  ==  World Wide Workshop Tuesday 2020
+    Open Browser  https://robocon.io/
+    Get Title  ==  RoboCon 2021
     Go To   https://robotframework.org/
-    Get Url  !=  https://robot-work.shop/
+    Get Url  !=  https://robocon.io/
