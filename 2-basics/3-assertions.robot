@@ -19,7 +19,7 @@ Get with an assertion and then
 
 *** Keywords ***
 Init route search
-   New Browser  https://graphhopper.com/maps
+   New Page  https://graphhopper.com/maps
    Type Text    id=0_Input  Helsinki
    Type Text    id=1_Input  Oulu
    Click   id=searchButton
