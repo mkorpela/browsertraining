@@ -1,7 +1,11 @@
 *** Settings ***
-Library   Browser  jsextension=${CURDIR}/extension.js
+Library   Browser  jsextension=${CURDIR}/extension.js  enable_presenter_mode=True
 
 *** Test Cases ***
 Example Test
-   New Page
-   myGoToKeyword   http://www.robotframework.org
+   Open Browser  https://www.reaktor.com
+   registerMySelector
+   Click  myselector=Work
+   Take Screenshot
+   serverErrors
+   Click  myselector=About
