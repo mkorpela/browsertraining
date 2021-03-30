@@ -28,9 +28,3 @@ Combining selectors
    Click  id=browserkirjastosuomeksifinlandsuomi3
    ${txt}=   Get Text    id=browserkirjastosuomeksifinlandsuomi3 >> ../../div[2] >> text=/.*Playwright.*/
    Should Be Equal  ${txt}  Katsahdus uuteen Browser kirjastoon, joka käyttää Playwright selainautomaatiotyökalua.
-
-Frame piercing
-   # TODO: Uusi osoite!!
-   New Page  https://www.dyn-web.com/tutorials/iframes/basics/demo.php
-   Highlight Elements  id=ifrm >>> h1  duration=1s  width=3px  color=red
-   Sleep  5s
