@@ -21,7 +21,9 @@ Get with an assertion and then
 Init route search
    New Page  https://graphhopper.com/maps
    Type Text    id=0_Input  Helsinki
+   Click   .autocomplete-suggestion
    Type Text    id=1_Input  Oulu
+   # TODO TÄHÄN TYÖTÄ
    Click   id=searchButton
 
 Url should be expected
