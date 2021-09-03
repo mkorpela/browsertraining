@@ -4,15 +4,15 @@ Suite Setup   New Context  permissions=['geolocation']  geolocation={'latitude':
 
 *** Test Cases ***
 Screenshot when not ready
-    New Page   https://www.google.com/maps
+    Open Browser   https://www.bing.com/maps/
     Set Geolocation    35.652832    139.839478
-    Click   id=widget-mylocation
+    Click   id=LocateMeButton
     Take Screenshot
 
 Screenshot after network is idle
-    New Page   https://www.google.com/maps
+    New Page   https://www.bing.com/maps/
     Set Geolocation    1.3146631    103.8454093
-    Click   id=widget-mylocation
+    Click   id=LocateMeButton
     Wait Until Network Is Idle
     Take Screenshot
 

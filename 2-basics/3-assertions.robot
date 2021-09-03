@@ -20,9 +20,8 @@ Get with an assertion and then
 *** Keywords ***
 Init route search
    New Page  https://graphhopper.com/maps
-   Type Text    id=0_Input  Helsinki
-   Click   .autocomplete-suggestion
-   Type Text    id=1_Input  Oulu
+   Type Text    id=0_Input  Helsinki\n
+   Type Text    id=1_Input  Oulu\n
    # TODO TÄHÄN TYÖTÄ
    Click   id=searchButton
 
